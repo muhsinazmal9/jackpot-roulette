@@ -1,0 +1,32 @@
+// bootstrap scss
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// commons
+@import './common';
+
+// variables
+@import './variables';
+
+// mixins
+@import './mixins';
+
+// all pages
+@import './pages/homePage';
+
+@import './pages/updatedHomePage';
+
+@import './pages/aboutPage';
+
+@import './pages/gamesPage';
+
+@import './pages/membershipPage';
+
+@import './pages/contuctPage';
+
+@import './pages/signUpPage';
+
+@import './pages/logInPage';
+
+@import './pages/404';
+
+@import './pages/promotionPage';

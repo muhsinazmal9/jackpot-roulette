@@ -1,0 +1,378 @@
+// navbar
+#navbar{
+    .navbar{
+        padding: 0;
+        background-color: #1500354D;
+        .container{
+            .navbar-brand{
+                margin: -8px 0 40px 0;
+                padding: 0;
+            }
+            .navbar-toggler{
+                border: none;
+                &:focus{
+                    color: transparent !important;
+                    box-shadow: none !important;
+                }
+                i{
+                    color: #944bff;
+                    transition: 0.3s;
+                    &:hover{
+                        color: $pink1;
+                    }
+                }
+            }
+            .navbar-collapse{
+                .navItems{
+                    .nav-item{
+                        a{
+                            @include fontCommon (20px, $ffNunito, $reguler, $purple1);
+                            padding: 0 25px;
+                            transition: 0.3s;
+                            &:hover{
+                                color: $pink1;
+                            }
+                        }
+                    }
+                }
+                .navButtons{
+                    display: flex;
+                    gap: 10px;
+                    a{
+                        button{
+                            @include commonButton;
+                            @include fontCommon(20px, $ffAnton, $reguler, #fff);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// heroPart
+#heroSection{
+    background: $primaryBg;
+    padding: 175px 0 60px 0;
+    .container{
+        .row{
+            .wheelImage{
+                img{
+                    margin-left: -200px;
+                    height: 673px;
+                }
+            }
+            .wheelResult{
+                .wheelResultPara1{
+                    @include fontCommon (20px, $ffNunito, $reguler, #fff);
+                    margin: 0px 0px 10px 10px;
+                }
+                .wheelResultMain{
+                    @include fontCommon (331px, $ffAnton, $reguler, transparent);
+                    @include gradientText;
+                    margin: -100px 0px;
+                    letter-spacing: 2px;
+                }
+                .wheelResultPara2{
+                    @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                    line-height: 26px;
+                    padding: 0px 10px;
+                    margin: 20px 0px;
+                }
+                .wheelResultButton{
+                    button{
+                        @include commonButton;
+                        @include fontCommon(24px, $ffAnton, $reguler, #fff);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// regestrationStep part
+#regestrationStep{
+    background: linear-gradient($primaryBg 50%, $secondaryBg 50%);
+    color: white;
+    .container{
+        .row{
+            .regeStepItem{
+                padding: 45px 0;
+                background-image: linear-gradient(45deg, #9e4efc -600%, #570dc8 100%);
+                text-align: center;
+                box-shadow: inset 100px 0 50px -100px rgba(32, 7, 69, 0.75),
+                            0px 6px #3a0090;
+                &:first-child{
+                    box-shadow: 0px 6px #3a0090;
+                }
+                .regeStepNumber{
+                    @include gradientText;
+                    letter-spacing: 2px;
+                    -webkit-text-stroke-width: 0.5px !important;
+                    filter: drop-shadow(0 3.5px rgba(17, 0, 16, 0.4));
+                    @include fontCommon (50px, $ffAnton, $reguler, transparent);
+                }
+                .regeStepHeadline{
+                    padding-top: 20px;
+                    @include fontCommon (32px, $ffAnton, $reguler, #fff);
+                    text-shadow: 5px 5px #5813b8;
+                }
+                .regeStepPara{
+                    padding-top: 17.5px;
+                    @include fontCommon (16px, $ffNunito, $reguler, #fff)
+                }
+            }
+        }
+    }
+}
+
+// relatedGames part
+#relatedGames{
+    background: $secondaryBg;
+    color: white;
+    .container{
+        padding-top: 50px;
+        padding-bottom: 100px;
+        .relatedSubHeading{
+            .relatedSubMainDiv{
+                padding-bottom: 50px;
+                h3{
+                    @include gradientText;
+                    -webkit-text-stroke-color: #4d0148;
+                    -webkit-text-stroke-width: 0.5px !important;
+                    @include fontCommon (50px, $ffAnton, $reguler, transparent);
+                }
+            }
+        }
+        .relatedItems{
+            .rltItem{
+                height: fit-content;
+                position: relative;
+                .relatedOverlay{
+                    position: absolute;
+                    top: 50%;
+                    left: 0%;
+                    transform: translateY(-50%);
+                    width: 50%;
+                    height: 100%;
+                    background: rgba(21, 0, 53, 0.85);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: 0.3s;
+                    .rltItemInfo{
+                        color: white;
+                        h4{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            @include fontCommon (24px, $ffAnton, $reguler, #fff)
+                        }
+                        a{
+                            button{
+                                position: absolute;
+                                top: 75%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                @include commonButton;
+                                @include fontCommon(24px, $ffAnton, $reguler, #fff);
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .relatedOverlay {
+                        opacity: 1;
+                        visibility: visible;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// freeSpin part
+
+#freeSpin{
+    background: $primaryBg;
+    color: white;
+    padding-top: 175px;
+    padding-bottom: 25px;
+    .container{
+        .freeSpinContents{
+            display: flex;
+            align-items: center;
+            .freeSpinPhoto{
+                margin-top: -75px;
+            }
+            .freeSpinInfo{
+                margin-top: -100px;
+                h3{
+                    @include gradientText;
+                    -webkit-text-stroke-color: #4d0148;
+                    -webkit-text-stroke-width: 0.5px !important;
+                    @include fontCommon (50px, $ffAnton, $reguler, transparent);
+                }
+                p{
+                    padding: 60px 0px;
+                    span{
+                        display: block;
+                        @include fontCommon (17.5px, $ffNunito, $reguler, #fff);
+                        line-height: 26px;
+                        &:last-child{
+                            padding-top: 17.5px;
+                        }
+                    }
+                }
+                a{
+                    button{
+                        @include commonButton;
+                        @include fontCommon(24px, $ffAnton, $reguler, #fff);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// pricing part
+#pricing{
+    background-color: $secondaryBg;
+    color: white;
+    padding-bottom: 120px;
+    .container{
+        .pricingSubHeadRow{
+            .pricingSubHead{
+                h3{
+                    padding: 90px 0px;
+                    @include gradientText;
+                    -webkit-text-stroke-color: #4d0148;
+                    -webkit-text-stroke-width: 0.5px !important;
+                    @include fontCommon (50px, $ffAnton, $reguler, transparent);
+                }
+            }
+        }
+        .pricingItemsRow{
+            .pricingItemMainDiv{
+                position: relative;
+                .hiddenFeatured{
+                    width: 100%;
+                    position: absolute;
+                    top: -40px;
+                    left: 0;
+                    padding: 20px 0px;
+                    background: linear-gradient(#9e4efc, #570dc8);
+                    background: linear-gradient(#ff39dc, #a60084);
+                    box-shadow: 0px 5px #661355;
+                    text-shadow: 4px 5px rgba(102, 19, 85, 0.75);
+                    border: none;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 0.3s;
+                    z-index: 99;
+                    @include fontCommon(20px, $ffNunito, $smbold, #fff);
+                }
+                .pricingItemMain{
+                    width: 100%;
+                    position: relative;
+                    background: linear-gradient(#9e4efc, #570dc8);
+                    padding-top: 60px;
+                    border-radius: 8px;
+
+                    .priceItemAbovePart{
+                        border-bottom: 1px solid rgba(11, 0, 27, 0.25);
+                        h3{
+                            @include fontCommon (32px, $ffAnton, $reguler, #fff);
+                            text-shadow: 4px 5px #5813b8;
+                        }
+                        h4{
+                            padding-top: 30px;
+                            padding-bottom: 15px;
+                            @include fontCommon (50px, $ffNunito, $bold, #fff);
+                        }
+                        p{
+                            padding-bottom: 30px;
+                            @include fontCommon (14px, $ffNunito, $reguler, #fff);
+                        }
+                    }
+                    .priceItemBelowPart{
+                        p{
+                            padding-top: 30px;
+                            padding-bottom: 30px;
+                            span{
+                                display: block;
+                                @include fontCommon (16px, $ffNunito, $smbold, #fff);
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                    .priceItemBelowButton{
+                        button{
+                            @include commonButton;
+                            @include fontCommon(24px, $ffAnton, $reguler, #fff);
+                            position: absolute;
+                            bottom: -25px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+                &::hover{
+                    .hiddenFeatured{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                    .pricingItemMain{
+                        top: 33px;
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+// FAQ part
+#faqPart{
+    display: none;
+}
+
+
+
+
+
+
+
+
+.winners{
+    height: 272px;
+    overflow-y: auto;
+    .winner_list{
+        margin: 10px 0px;
+        .winner_name{
+            p{
+                text-transform: capitalize;
+            }
+        }
+        .flags{
+            width: 20px;
+        }
+        .win_money{
+            p{
+                &::before{
+                    content: "$";
+                }
+            }
+        }
+    }
+}
