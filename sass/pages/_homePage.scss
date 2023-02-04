@@ -197,7 +197,6 @@
 }
 
 // freeSpin part
-
 #freeSpin{
     background: $primaryBg;
     color: white;
@@ -324,7 +323,6 @@
     }
 }
 
-
 // FAQ part
 #faqPart{
     background: $primaryBg;
@@ -336,20 +334,12 @@
                 -webkit-text-stroke-color: #4d0148;
                 -webkit-text-stroke-width: 0.5px !important;
                 @include fontCommon (40px, $ffAnton, $reguler, transparent);
-                padding-bottom: 30px;
-            }
-            .glowMove1{
-                height: 2px;
-                background: #000;
-            }
-            .glowMove2{
-                height: 1px;
-                background: #290a59;
+                margin-bottom: 30px;
             }
         }
         .frequentlyCol{
             .accordion{
-                margin-top: 38px;
+                margin-top: 30px;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
@@ -376,6 +366,7 @@
                         .accordion-body{
                             background: $primaryBg;
                             padding: 30px;
+                            padding-top: 10px;
                             p{
                                 @include fontCommon (16px, $ffNunito, $reguler, #fff);
                                 line-height: 26px;
@@ -386,33 +377,232 @@
                 }
             }
         }
+        .tournamentCol{
+            .winCountdown{
+                margin: 30px 0px;
+                .cdSubHead{
+                    h3{
+                        @include fontCommon (20px, $ffNunito, $reguler, #fff)
+                    }
+                }
+                .mainHMS{
+                    display: flex;
+                    gap: 30px;
+                    .bgCDhms{
+                        width: 70px;
+                        background-image: linear-gradient(#fcb100 0%, #fcb100 48.75%, #db7209 50.5%, #feb510 100%);
+                        padding: 1px;
+                        border-radius: 5px;
+                        .winCountdownHMS{
+                            background: $primaryBg;
+                            border-radius: 5px;
+                            padding: 10px 0px;
+                            p{ 
+                                background-image: linear-gradient(#fcb100 0%, #fcb100 48.75%, #db7209 50.5%, #feb510 100%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                -moz-background-clip: text;
+                                -moz-text-fill-color: transparent;
+                                @include fontCommon (20px, $ffNunito, $smbold, transparent);
+                                line-height: 26px;
+                                span{
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .winners{
+                height: 312px;
+                overflow-y: auto;
+                color: white;
+                .winner_list{
+                    margin: 20px 0px;
+                    @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                    .winner_name{
+                        p{
+                            text-transform: capitalize;
+                        }
+                    }
+                    .flags{
+                        width: 20px;
+                    }
+                    .win_money{
+                        p{
+                            &::before{
+                                content: "$";
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
-
-
-
-
-
-
-
-.winners{
-    height: 272px;
-    overflow-y: auto;
-    .winner_list{
-        margin: 10px 0px;
-        .winner_name{
-            p{
-                text-transform: capitalize;
+// subscribe Part
+#subscribePart{
+    padding: 30px 0px;
+    background: $blueGradientBg;
+    .container{
+        .row{
+            .subscribeCommonCol{
+                h3{
+                    @include fontCommon (32px, $ffAnton, $reguler, #fff);
+                    text-shadow: 4px 5px #5813b8;
+                }
+            }
+            .subscribeLeft_form{
+                .subscribeForm{
+                    margin-top: 20px;
+                    form{
+                        border: 1px solid #3a0090;
+                        input{
+                            border: none;
+                            background: transparent;
+                            width: 100%;
+                            padding: 10px 15px;
+                            @include fontCommon (14px, $ffNunito, $reguler, #d0b0ff);
+                            &::placeholder{
+                                @include fontCommon (14px, $ffNunito, $reguler, #3a0090);
+                                opacity: 1;
+                            }
+                        }
+                        .subscribeMailSentButton{
+                            border: none;
+                            border-left: 1px solid #3a0090;
+                            background: transparent;
+                            padding: 10px 20px;
+                            i{
+                                font-size: 16px;
+                                color: #3a0090;
+                            }
+                        }
+                    }
+                }
+            }
+            .subscribeRight_payment{
+                .payment_methods{
+                    margin-top: 20px;
+                    gap: 20px;
+                    .payment_method{
+                        width: 20%;
+                        border-radius: 5px;
+                        box-shadow: 5px 5px #5813b8;
+                    }
+                }
             }
         }
-        .flags{
-            width: 20px;
+    }
+}
+
+// about Part
+#aboutPart{
+    background-color: $secondaryBg;
+    padding: 60px;
+    color: white;
+    .container{
+        .row{
+            .commonAboutCol{
+                h3{
+                    @include fontCommon (32px, $ffAnton, $reguler, #fff);
+                    margin-bottom: 30px;
+                }
+            }
+            .aboutCol_about{
+                .footerAboutPara{
+                    @include fontCommon (16px, $ffNunito, $xlight, #fff);
+                    line-height: 26px;
+                    padding-right: 50px;
+                    margin-bottom: 40px;
+                }
+                .socialLinks{
+                    gap: 15px;
+                    .socialLink{
+                        @include commonButton;
+                        text-shadow: 3px 3px #5813b8;
+                        border-radius: 0;
+                        width: 50px;
+                        padding: 15px 0px;
+                        text-align: center;
+                        &:hover{
+                            text-shadow: 3px 3px #a60084;
+                        }
+                        i{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .importantLinksCol_about{
+                .childRowForLinks{
+                    .childColForLinks{
+                        p{
+                            line-height: 40px;
+                            a{
+                                display: block;
+                                @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                                transition: 0.3s;
+                                &:hover{
+                                    color: $pink1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .securityInfoCol_about{
+                .securityItemsMaster{
+                    gap: 30px;
+                    .securityItemMain{
+                        gap: 30px;
+                        align-items: center;
+                        img{
+                            width: 70px;
+                        }
+                        a{
+                            padding-right: 185px;
+                            @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                            line-height: 16px;
+                            transition: 0.3s;
+                            &:hover{
+                                color: $pink1;
+                            }
+                        }
+                    }
+                }
+            }
         }
-        .win_money{
+    }
+}
+
+// copyright part
+#copyrightPart{
+    background: $secondaryBg;
+    padding: 20px 0px;
+    .container{
+        .row{
             p{
-                &::before{
-                    content: "$";
+                @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                animation-name: colorChange;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease;
+                transition: all;
+            }
+            @keyframes colorChange {
+                0%{
+                    color: #fff;
+                }
+                50%{
+                    color: $pink1;
+                }
+                75%{
+                    color: $purple1;
+                }
+                100%{
+                    color: #fff;
                 }
             }
         }
