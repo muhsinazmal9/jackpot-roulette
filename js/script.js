@@ -38,7 +38,7 @@ $('.back-to-top').on('click', function(event) {
 // BACK TO TOP BUTTON FUNCTION END
 
 // countDownJs
-(function () {
+$(function () {
     const second = 1000,
           minute = second * 60,
           hour = minute * 60,
@@ -81,3 +81,11 @@ $('.back-to-top').on('click', function(event) {
           //seconds
         }, 0)
     }());
+
+
+$(function () {
+    new VenoBox({
+        selector: '.my-video-links',
+    });
+})
+
