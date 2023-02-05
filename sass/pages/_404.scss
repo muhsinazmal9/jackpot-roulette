@@ -1,0 +1,17 @@
+#errorPart {
+    padding: 250px 0px 100px 0px;
+    background: $primaryBg;
+    .container{
+        .row{
+            .errorContents{
+                a{
+                    margin-top: 60px;
+                    button{
+                        @include commonButton;
+                        @include fontCommon(24px, $ffAnton, $reguler, #fff);
+                    }
+                }
+            }
+        }
+    }
+}
