@@ -1,14 +1,14 @@
 // bootstrap scss
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-// commons
-@import './common';
-
 // variables
 @import './variables';
 
 // mixins
 @import './mixins';
+
+// commons
+@import './common';
 
 // all pages
 @import './pages/homePage';
