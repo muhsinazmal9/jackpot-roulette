@@ -1,0 +1,52 @@
+// navbar
+#navbar{
+    .navbar{
+        padding: 0;
+        background: $primaryBg;
+        .container{
+            .navbar-brand{
+                margin: -8px 0 40px 0;
+                padding: 0;
+            }
+            .navbar-toggler{
+                border: none;
+                &:focus{
+                    color: transparent !important;
+                    box-shadow: none !important;
+                }
+                i{
+                    color: #944bff;
+                    transition: 0.3s;
+                    &:hover{
+                        color: $pink1;
+                    }
+                }
+            }
+            .navbar-collapse{
+                .navItems{
+                    gap: 50px;
+                    .nav-item{
+                        a{
+                            @include fontCommon (20px, $ffNunito, $reguler, $purple1);
+                            padding: 0;
+                            transition: 0.3s;
+                            &:hover{
+                                color: $pink1;
+                            }
+                        }
+                    }
+                }
+                .navButtons{
+                    display: flex;
+                    gap: 10px;
+                    a{
+                        button{
+                            @include commonButton;
+                            @include fontCommon(20px, $ffAnton, $reguler, #fff);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

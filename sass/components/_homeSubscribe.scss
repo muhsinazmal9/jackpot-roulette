@@ -1,0 +1,55 @@
+// subscribe Part
+#subscribePart{
+    padding: 30px 0px;
+    background: $blueGradientBg;
+    .container{
+        .row{
+            .subscribeCommonCol{
+                h3{
+                    @include fontCommon (32px, $ffAnton, $reguler, #fff);
+                    text-shadow: 4px 5px #5813b8;
+                }
+            }
+            .subscribeLeft_form{
+                .subscribeForm{
+                    margin-top: 20px;
+                    form{
+                        border: 1px solid #3a0090;
+                        input{
+                            border: none;
+                            background: transparent;
+                            width: 100%;
+                            padding: 10px 15px;
+                            @include fontCommon (14px, $ffNunito, $reguler, #d0b0ff);
+                            &::placeholder{
+                                @include fontCommon (14px, $ffNunito, $reguler, #3a0090);
+                                opacity: 1;
+                            }
+                        }
+                        .subscribeMailSentButton{
+                            border: none;
+                            border-left: 1px solid #3a0090;
+                            background: transparent;
+                            padding: 10px 20px;
+                            i{
+                                font-size: 16px;
+                                color: #3a0090;
+                            }
+                        }
+                    }
+                }
+            }
+            .subscribeRight_payment{
+                .payment_methods{
+                    margin-top: 20px;
+                    gap: 20px;
+                    .payment_method{
+                        width: 20%;
+                        border-radius: 5px;
+                        box-shadow: 5px 5px #5813b8;
+                    }
+                }
+            }
+        }
+    }
+}

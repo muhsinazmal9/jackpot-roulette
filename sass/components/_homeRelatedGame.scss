@@ -1,0 +1,69 @@
+// relatedGames part
+#relatedGames{
+    background: $secondaryBg;
+    color: white;
+    .container{
+        padding-top: 50px;
+        padding-bottom: 100px;
+        .relatedSubHeading{
+            .relatedSubMainDiv{
+                padding-bottom: 50px;
+                h3{
+                    @include gradientText;
+                    -webkit-text-stroke-color: #4d0148;
+                    -webkit-text-stroke-width: 0.5px !important;
+                    @include fontCommon (50px, $ffAnton, $reguler, transparent);
+                }
+            }
+        }
+        .relatedItems{
+            .rltItem{
+                height: fit-content;
+                position: relative;
+                .relatedOverlay{
+                    position: absolute;
+                    top: 50%;
+                    left: 0%;
+                    transform: translateY(-50%);
+                    width: 50%;
+                    height: 100%;
+                    background: rgba(21, 0, 53, 0.85);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: 0.3s;
+                    .rltItemInfo{
+                        color: white;
+                        h4{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            @include fontCommon (24px, $ffAnton, $reguler, #fff)
+                        }
+                        a{
+                            button{
+                                position: absolute;
+                                top: 75%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                @include commonButton;
+                                @include fontCommon(24px, $ffAnton, $reguler, #fff);
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .relatedOverlay {
+                        opacity: 1;
+                        visibility: visible;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

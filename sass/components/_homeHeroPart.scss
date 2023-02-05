@@ -1,0 +1,39 @@
+// heroPart
+#heroSection{
+    background: $primaryBg;
+    padding: 175px 0 60px 0;
+    .container{
+        .row{
+            .wheelImage{
+                img{
+                    margin-left: -200px;
+                    height: 673px;
+                }
+            }
+            .wheelResult{
+                .wheelResultPara1{
+                    @include fontCommon (20px, $ffNunito, $reguler, #fff);
+                    margin: 0px 0px 10px 10px;
+                }
+                .wheelResultMain{
+                    @include fontCommon (331px, $ffAnton, $reguler, transparent);
+                    @include gradientText;
+                    margin: -100px 0px;
+                    letter-spacing: 2px;
+                }
+                .wheelResultPara2{
+                    @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                    line-height: 26px;
+                    padding: 0px 10px;
+                    margin: 20px 0px;
+                }
+                .wheelResultButton{
+                    button{
+                        @include commonButton;
+                        @include fontCommon(24px, $ffAnton, $reguler, #fff);
+                    }
+                }
+            }
+        }
+    }
+}

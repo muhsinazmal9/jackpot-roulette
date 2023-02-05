@@ -1,0 +1,83 @@
+// pricing part
+#pricing{
+    background-color: $secondaryBg;
+    color: white;
+    padding-bottom: 112px;
+    .container{
+        .pricingSubHeadRow{
+            .pricingSubHead{
+                h3{
+                    padding: 90px 0px;
+                    @include gradientText;
+                    -webkit-text-stroke-color: #4d0148;
+                    -webkit-text-stroke-width: 0.5px !important;
+                    @include fontCommon (50px, $ffAnton, $reguler, transparent);
+                }
+            }
+        }
+        .pricingItemsRow{
+            .pricingItemMainDiv{
+                .hiddenFeatured{
+                    width: 100%;
+                    padding: 16px 0px;
+                    background: linear-gradient(#ff39dc, #a60084);
+                    box-shadow: 0px 5px #661355;
+                    text-shadow: 3px 3px rgba(102, 19, 85, 0.75);
+                    border: none;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    transition: 0.3s;
+                    @include fontCommon(20px, $ffNunito, $smbold, #fff);
+                }
+                .pricingItemMain{
+                    width: 100%;
+                    position: relative;
+                    background: linear-gradient(#9e4efc, #570dc8);
+                    padding-top: 60px;
+                    border-radius: 8px;
+                    .priceItemAbovePart{
+                        border-bottom: 1px solid rgba(11, 0, 27, 0.25);
+                        h3{
+                            @include fontCommon (32px, $ffAnton, $reguler, #fff);
+                            text-shadow: 4px 5px #5813b8;
+                        }
+                        h4{
+                            padding-top: 30px;
+                            padding-bottom: 15px;
+                            @include fontCommon (50px, $ffNunito, $bold, #fff);
+                        }
+                        p{
+                            padding-bottom: 30px;
+                            @include fontCommon (14px, $ffNunito, $reguler, #fff);
+                        }
+                    }
+                    .priceItemBelowPart{
+                        p{
+                            padding-top: 30px;
+                            padding-bottom: 30px;
+                            span{
+                                display: block;
+                                @include fontCommon (16px, $ffNunito, $smbold, #fff);
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                    .priceItemBelowButton{
+                        button{
+                            @include commonButton;
+                            @include fontCommon(24px, $ffAnton, $reguler, #fff);
+                            position: absolute;
+                            bottom: -25px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+                &::hover{
+
+                }
+            }
+
+        }
+    }
+}

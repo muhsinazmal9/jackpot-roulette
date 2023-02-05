@@ -1,0 +1,79 @@
+// about Part
+#aboutPart{
+    background-color: $secondaryBg;
+    padding: 60px;
+    color: white;
+    .container{
+        .row{
+            .commonAboutCol{
+                h3{
+                    @include fontCommon (32px, $ffAnton, $reguler, #fff);
+                    margin-bottom: 30px;
+                }
+            }
+            .aboutCol_about{
+                .footerAboutPara{
+                    @include fontCommon (16px, $ffNunito, $xlight, #fff);
+                    line-height: 26px;
+                    padding-right: 50px;
+                    margin-bottom: 40px;
+                }
+                .socialLinks{
+                    gap: 15px;
+                    .socialLink{
+                        @include commonButton;
+                        text-shadow: 3px 3px #5813b8;
+                        border-radius: 0;
+                        width: 50px;
+                        padding: 15px 0px;
+                        text-align: center;
+                        &:hover{
+                            text-shadow: 3px 3px #a60084;
+                        }
+                        i{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .importantLinksCol_about{
+                .childRowForLinks{
+                    .childColForLinks{
+                        p{
+                            line-height: 40px;
+                            a{
+                                display: block;
+                                @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                                transition: 0.3s;
+                                &:hover{
+                                    color: $pink1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .securityInfoCol_about{
+                .securityItemsMaster{
+                    gap: 30px;
+                    .securityItemMain{
+                        gap: 30px;
+                        align-items: center;
+                        img{
+                            width: 70px;
+                        }
+                        a{
+                            padding-right: 185px;
+                            @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                            line-height: 16px;
+                            transition: 0.3s;
+                            &:hover{
+                                color: $pink1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+// freeSpin part
+#freeSpin{
+    background: $primaryBg;
+    color: white;
+    padding-top: 175px;
+    padding-bottom: 25px;
+    .container{
+        .freeSpinContents{
+            display: flex;
+            align-items: center;
+            .freeSpinPhoto{
+                margin-top: -75px;
+            }
+            .freeSpinInfo{
+                margin-top: -100px;
+                h3{
+                    @include gradientText;
+                    -webkit-text-stroke-color: #4d0148;
+                    -webkit-text-stroke-width: 0.5px !important;
+                    @include fontCommon (50px, $ffAnton, $reguler, transparent);
+                }
+                p{
+                    padding: 60px 0px;
+                    span{
+                        display: block;
+                        @include fontCommon (17.5px, $ffNunito, $reguler, #fff);
+                        line-height: 26px;
+                        &:last-child{
+                            padding-top: 17.5px;
+                        }
+                    }
+                }
+                a{
+                    button{
+                        @include commonButton;
+                        @include fontCommon(24px, $ffAnton, $reguler, #fff);
+                    }
+                }
+            }
+        }
+    }
+}
