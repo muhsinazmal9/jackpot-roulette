@@ -31,6 +31,26 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*============*=============*/
 
+/* ==========sticky header========== */
+.sticky_header{
+    animation: smooth 1s;
+    background: rgba(0, 0, 0, 0.75) !important;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 1.5px 0px #944bff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+@keyframes smooth{
+    from{
+        top: -100px;
+    }
+    to{
+        top: 0;
+    }
+}
+
+
+/* ==========GLOW EFFECTS========== */
 .glowMove1{
     height: 2px;
     background: #000;

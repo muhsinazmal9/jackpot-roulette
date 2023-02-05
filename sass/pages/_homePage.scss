@@ -2,7 +2,7 @@
 #navbar{
     .navbar{
         padding: 0;
-        background-color: #1500354D;
+        background: $primaryBg;
         .container{
             .navbar-brand{
                 margin: -8px 0 40px 0;
@@ -24,10 +24,11 @@
             }
             .navbar-collapse{
                 .navItems{
+                    gap: 50px;
                     .nav-item{
                         a{
                             @include fontCommon (20px, $ffNunito, $reguler, $purple1);
-                            padding: 0 25px;
+                            padding: 0;
                             transition: 0.3s;
                             &:hover{
                                 color: $pink1;
@@ -399,10 +400,8 @@
                             padding: 10px 0px;
                             p{ 
                                 background-image: linear-gradient(#fcb100 0%, #fcb100 48.75%, #db7209 50.5%, #feb510 100%);
-                                -webkit-background-clip: text;
+                                background-clip: text;
                                 -webkit-text-fill-color: transparent;
-                                -moz-background-clip: text;
-                                -moz-text-fill-color: transparent;
                                 @include fontCommon (20px, $ffNunito, $smbold, transparent);
                                 line-height: 26px;
                                 span{
