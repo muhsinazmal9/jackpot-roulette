@@ -10,8 +10,54 @@
                 text-align: center;
                 box-shadow: inset 100px 0 50px -100px rgba(32, 7, 69, 0.75),
                             0px 6px #3a0090;
-                &:first-child{
+                &:nth-child(1){
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
                     box-shadow: 0px 6px #3a0090;
+                }
+                &:nth-child(3){
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+
+
+                @include sm {
+                    &:nth-child(1){
+                        border-radius: 0;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        box-shadow: inset 0px -100px 50px -100px rgba(32, 7, 69, 0.75),
+                                    0px 6px #3a0090;
+                    }
+                    &:nth-child(2){
+                        box-shadow: inset 0px -100px 50px -100px rgba(32, 7, 69, 0.75),
+                                    0px 6px #3a0090;
+                    }
+                    &:nth-child(3){
+                        border-radius: 0;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        box-shadow: 0px 6px #3a0090;
+                    }
+                }
+                @include md {
+                    &:nth-child(1){
+                        border-radius: 0;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        box-shadow: inset 0px -100px 50px -100px rgba(32, 7, 69, 0.75),
+                                    0px 6px #3a0090;
+                    }
+                    &:nth-child(2){
+                        box-shadow: inset 0px -100px 50px -100px rgba(32, 7, 69, 0.75),
+                                    0px 6px #3a0090;
+                    }
+                    &:nth-child(3){
+                        border-radius: 0;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        box-shadow: 0px 6px #3a0090;
+                    }
                 }
                 .regeStepNumber{
                     @include gradientText;
