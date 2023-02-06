@@ -10,21 +10,49 @@
             }
             .navbar-toggler{
                 border: $purple1 1px solid !important;
+                transition: 0.3s;
                 &:focus{
+                    border: $pink1 1px solid !important;
                     color: transparent !important;
-                    box-shadow: none !important;
-                }
-                i{
-                    color: #944bff;
-                    transition: 0.3s;
-                    &:focus{
+                    box-shadow: transparent !important;
+                    i{
                         color: $pink1;
                     }
+
+                }
+                i{
+                    color: $purple1;
+                    transition: 0.3s;
+
                 }
             }
             .navbar-collapse{
+                @include sm {
+                    margin-bottom: 50px;
+                }
+                @include md {
+                    margin-bottom: 50px;
+                }
+                @include lg {
+                    margin-bottom: 50px;
+                }
                 .navItems{
                     gap: 50px;
+                    @include sm {
+                        gap: 25px;
+                        align-items: center;
+                    }
+                    @include md {
+                        gap: 25px;
+                        align-items: center;
+                    }
+                    @include lg {
+                        gap: 25px;
+                        align-items: center;
+                    }
+                    @include xl {
+                        gap: 30px;
+                    }
                     .nav-item{
                         a{
                             @include fontCommon (20px, $ffNunito, $reguler, $purple1);
@@ -37,8 +65,25 @@
                     }
                 }
                 .navButtons{
-                    display: flex;
                     gap: 10px;
+                    @include sm {
+                        gap: 25px;
+                        margin-top: 25px;
+                        justify-content: center;
+                        flex-direction: row;
+                    }
+                    @include md {
+                        gap: 25px;
+                        margin-top: 25px;
+                        justify-content: center;
+                        flex-direction: row;
+                    }
+                    @include lg {
+                        gap: 25px;
+                        margin-top: 25px;
+                        justify-content: center;
+                        flex-direction: row;
+                    }
                     a{
                         button{
                             @include commonButton;

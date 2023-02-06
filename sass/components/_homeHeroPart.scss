@@ -5,32 +5,95 @@
     .container{
         .row{
             .wheelImage{
+                @include xl {
+                    display: flex;
+                    align-items: center;
+                }
+                @include xxl {
+                    display: flex;
+                    align-items: center;
+                }
                 img{
-                    margin-left: -200px;
-                    height: 673px;
+                    width: 135%;
+                    margin-left: -35%;
                     @include sm {
-                        margin: 0;
-                        height: inherit;
                         width: 100%;
+                        margin: 0;
+                    }
+                    @include md {
+                        width: 100%;
+                        margin: 0;
+                    }
+                    @include lg {
+                        width: 100%;
+                        margin: 0;
+                    }
+                    @include xl {
+                        width: 100%;
+                        margin: 0;
+                    }
+                    @include xxl {
+                        width: 100%;
+                        margin: 0%;
+                    }
+                    @media (min-width: 1400px) and (max-width: 1700px) {
+                        width: 110%;
+                        margin-left: -10%;
                     }
                 }
             }
             .wheelResult{
-                .wheelResultPara1{
-                    @include fontCommon (20px, $ffNunito, $reguler, #fff);
-                    margin: 0px 0px 10px 10px;
-                }
-                .wheelResultMain{
-                    @include fontCommon (331px, $ffAnton, $reguler, transparent);
-                    @include gradientText;
-                    margin: -100px 0px;
-                    letter-spacing: 2px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .wheelResultMainCount{
+                    .wheelResultPara1{
+                        @include fontCommon (20px, $ffNunito, $reguler, #fff);
+                        margin: 0px 0px 10px 10px;
+                    }
+                    .wheelResultMain{
+                        @include fontCommon (331px, $ffAnton, $reguler, transparent);
+                        @include gradientText;
+                        margin: -100px 0px;
+                        letter-spacing: 2px;
+                        @include sm {
+                            @include fontCommon (250px, $ffAnton, $reguler, transparent);
+                            margin: -75px 0px;
+                            letter-spacing: 2px;
+                        }
+                        @include md {
+                            @include fontCommon (331px, $ffAnton, $reguler, transparent);
+                            margin: -100px 0px;
+                            letter-spacing: 2px;
+                        }
+                        @include lg {
+                            @include fontCommon (450px, $ffAnton, $reguler, transparent);
+                            margin: -130px 0px;
+                            letter-spacing: 2px;
+                        }
+                        @include xl {
+                            @include fontCommon (300px, $ffAnton, $reguler, transparent);
+                            margin: -90px 0px;
+                            letter-spacing: 2px;
+                        }
+                    }
                 }
                 .wheelResultPara2{
                     @include fontCommon (16px, $ffNunito, $reguler, #fff);
                     line-height: 26px;
                     padding: 0px 10px;
                     margin: 20px 0px;
+                    @include sm {
+                        @include fontCommon (14px, $ffNunito, $reguler, #fff);
+                        line-height: 22px;
+                        padding: 0px 35px;
+                    }
+                    @include md {
+                        padding: 0px 38px;
+                    }
+                    @include lg {
+                        padding: 0px 60px;
+                    }
                 }
                 .wheelResultButton{
                     button{

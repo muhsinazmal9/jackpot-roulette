@@ -8,29 +8,47 @@
     box-sizing: border-box;
 }
 
-a, a:hover {
-    text-decoration: none;
-    display: inline-block;
-    color: inherit;
-}
-
-ul, ol {
-    list-style-type: none;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-    padding: 0;
-    line-height: 0.8;
-}
-
 .body {
     background: $primaryBg;
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+    &:hover{
+        text-decoration: none;
+        display: inline-block;
+        color: inherit;
+    }
+}
 
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+    font-size: inherit;
+}
 /*============*=============*/
+
+
+
+
+
+
+
 
 /* ==========sticky header========== */
 .sticky_header{
@@ -55,6 +73,13 @@ h1, h2, h3, h4, h5, h6, p {
         top: 0;
     }
 }
+
+
+
+
+
+
+
 
 
 /* ==========GLOW EFFECTS========== */
@@ -95,6 +120,12 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
+
+
+
+
+
+
 /* ==========backToTop========== */
 .back-to-top{
     position: fixed;
@@ -104,5 +135,5 @@ h1, h2, h3, h4, h5, h6, p {
 
 .back-to-top i{
     font-size: 20px;
-    color: #fff;
+    color: $pink1;
 }
