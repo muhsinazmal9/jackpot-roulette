@@ -20,7 +20,6 @@
                     border-bottom-right-radius: 5px;
                 }
 
-
                 @include sm {
                     &:nth-child(1){
                         border-radius: 0;
@@ -65,15 +64,27 @@
                     -webkit-text-stroke-width: 0.5px !important;
                     filter: drop-shadow(0 3.5px rgba(17, 0, 16, 0.4));
                     @include fontCommon (50px, $ffAnton, $reguler, transparent);
+                    @include lg {
+                        font-size: 40px;
+                    }
                 }
                 .regeStepHeadline{
                     padding-top: 20px;
                     @include fontCommon (32px, $ffAnton, $reguler, #fff);
                     text-shadow: 5px 5px #5813b8;
+                    @include lg {
+                        padding-top: 10px;
+                        font-size: 25px;
+                    }
                 }
                 .regeStepPara{
                     padding-top: 17.5px;
-                    @include fontCommon (16px, $ffNunito, $reguler, #fff)
+                    @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                    @include lg{
+                        padding: 17.5px 30px 0px 30px;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
                 }
             }
         }
