@@ -75,6 +75,7 @@
                             p{ 
                                 background-image: linear-gradient(#fcb100 0%, #fcb100 48.75%, #db7209 50.5%, #feb510 100%);
                                 background-clip: text;
+                                -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
                                 @include fontCommon (20px, $ffNunito, $smbold, transparent);
                                 line-height: 26px;
