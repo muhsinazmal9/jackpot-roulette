@@ -23,3 +23,21 @@ $black: 900;
 // colors
 $purple1: #944bff;
 $pink1: #ff39dc;
+
+//breakpoints
+$breakpoints: (
+    xs: 0,
+    sm: 575.98px,
+    // =============
+    min-md: 576px,
+    md: 767.98px,
+    // =============
+    min-lg: 767px,
+    lg: 991.98px,
+    // =============
+    min-xl: 992px,
+    xl: 1199.98px,
+    // =============
+    min-xxl: 1200px,
+    xxl: 1399.98px
+);

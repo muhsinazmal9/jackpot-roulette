@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 $(window).scroll(function(){
     var scrolling = $(this).scrollTop();
     
-    if(scrolling > 200){
+    if(scrolling > 1){
         $('.navbar').addClass('sticky_header');
     }
     else {
@@ -89,3 +89,7 @@ $(function () {
     });
 })
 
+var preloader = document.getElementById('preloader')
+function myFunction (){
+    preloader.style.display = 'none';
+}

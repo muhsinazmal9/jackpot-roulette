@@ -8,6 +8,11 @@
                 img{
                     margin-left: -200px;
                     height: 673px;
+                    @include sm {
+                        margin: 0;
+                        height: inherit;
+                        width: 100%;
+                    }
                 }
             }
             .wheelResult{

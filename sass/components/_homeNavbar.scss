@@ -9,7 +9,7 @@
                 padding: 0;
             }
             .navbar-toggler{
-                border: none;
+                border: $purple1 1px solid !important;
                 &:focus{
                     color: transparent !important;
                     box-shadow: none !important;
@@ -17,7 +17,7 @@
                 i{
                     color: #944bff;
                     transition: 0.3s;
-                    &:hover{
+                    &:focus{
                         color: $pink1;
                     }
                 }

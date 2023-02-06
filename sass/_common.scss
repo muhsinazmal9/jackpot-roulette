@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .body {
+    background: $primaryBg;
     overflow-x: hidden;
 }
 
@@ -33,12 +34,18 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* ==========sticky header========== */
 .sticky_header{
-    animation: smooth 1s;
+    animation: smooth 0.5s;
     background: rgba(0, 0, 0, 0.75) !important;
     backdrop-filter: blur(50px);
     box-shadow: 0 1.5px 0px #944bff;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    .container{
+        .navbar-brand{
+            margin: -8px 0px 20px 0px !important;
+            padding: 0;
+        }
+    }
 }
 @keyframes smooth{
     from{
