@@ -20,6 +20,13 @@
             .rltItem{
                 height: fit-content;
                 position: relative;
+                &:nth-child(3){
+                    .relatedOverlay{
+                        width: 100%;
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
                 .relatedOverlay{
                     position: absolute;
                     top: 50%;

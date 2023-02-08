@@ -89,7 +89,9 @@ $(function () {
     });
 })
 
-var preloader = document.getElementById('preloader')
-function myFunction (){
-    preloader.style.display = 'none';
-}
+
+$('.variableW').slick({
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3
+  });
