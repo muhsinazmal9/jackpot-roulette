@@ -1,0 +1,13 @@
+// copyright part
+#copyrightPart{
+    background: $secondaryBg;
+    padding: 20px 0px;
+    .container{
+        .row{
+            p{
+                @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                line-height: 26px;
+            }
+        }
+    }
+}

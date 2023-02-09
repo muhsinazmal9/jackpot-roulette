@@ -4,6 +4,9 @@
     .container{
         padding: 100px 0px;
         .FAQcommonCol{
+            @include sm {
+                text-align: center;
+            }
             .frequentlySubHead{
                 @include gradientText;
                 -webkit-text-stroke-color: #4d0148;
@@ -97,6 +100,7 @@
                     .winner_name{
                         p{
                             text-transform: capitalize;
+                            text-align: left;
                         }
                     }
                     .flags{
@@ -104,6 +108,7 @@
                     }
                     .win_money{
                         p{
+                            text-align: right;
                             &::before{
                                 content: "$";
                             }

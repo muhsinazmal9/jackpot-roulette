@@ -8,22 +8,22 @@
 @import './common';
 
 // all pages
-@import './pages/homePage';
+@import './pages/homePage/00_homePage';
 
-@import './pages/updatedHomePage';
+@import './pages/UpdatedHomePage/00_updatedHomePage';
 
-@import './pages/aboutPage';
+@import './pages/aboutUs/00_aboutPage';
 
-@import './pages/gamesPage';
+@import './pages/gamesPage/00_gamesPage';
 
-@import './pages/membershipPage';
+@import './pages/memberShipPage/00_membershipPage';
 
-@import './pages/contuctPage';
+@import './pages/contact/00_contactPage';
 
-@import './pages/signUpPage';
+@import './pages/signUpPage/00_signUpPage';
 
-@import './pages/logInPage';
+@import './pages/logInPage/00_logInPage';
 
-@import './pages/404';
+@import './pages/404/00_404';
 
-@import './pages/promotionPage';
+@import './pages/promotionPage/00_promotionPage';

@@ -1,0 +1,20 @@
+// About Page sub-head part
+#commonPageSubHead{
+    background: $primaryBg;
+    padding: 220px 0px 75px 0px;
+    .container{
+        .row{
+            h3{
+                @include gradientText;
+                -webkit-text-stroke-color: #4d0148;
+                -webkit-text-stroke-width: 0.5px !important;
+                @include fontCommon (50px, $ffAnton, $reguler, transparent);
+            }
+            h4{
+                margin-top: 3.5px;
+                @include fontCommon (24px, $ffAnton, $reguler, #fff);
+                text-shadow: 4px 5px #1f004f;
+            }
+        }
+    }
+}

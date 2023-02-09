@@ -40,13 +40,37 @@
                 }
             }
             .subscribeRight_payment{
+                @include sm {
+                    margin-top: 20px;
+                }
+                @include md {
+                    margin-top: 20px;
+                }
+                @include lg {
+                    margin-top: 20px;
+                }
                 .payment_methods{
                     margin-top: 20px;
                     gap: 20px;
+                    @include sm {
+                        gap: 12.5;
+                    }
+                    @include xl {
+                        gap: 15px;
+                    }
                     .payment_method{
                         width: 20%;
                         border-radius: 5px;
                         box-shadow: 5px 5px #5813b8;
+                        @include sm {
+                            width: 20%;
+                        }
+                        @include md {
+                            width: 12.5%;
+                        }
+                        @include lg {
+                            width: 10%;
+                        }
                     }
                 }
             }

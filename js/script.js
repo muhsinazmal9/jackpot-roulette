@@ -37,6 +37,8 @@ $('.back-to-top').on('click', function(event) {
 });
 // BACK TO TOP BUTTON FUNCTION END
 
+
+
 // countDownJs
 $(function () {
     const second = 1000,

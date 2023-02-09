@@ -1,0 +1,43 @@
+// about article part
+#aboutPageArticle{
+    background: $secondaryBg;
+    padding: 72px 0 60px 0px;
+    .container{
+        .row{
+            .aboutArticleContent{
+                color: white;
+                .aboutArticlePara{
+                    gap: 38px;
+                    @include fontCommon (18px, $ffNunito, $reguler, #fff);
+                    line-height: 28px;
+                }
+                .aboutArticleCTA{
+                    margin-top: 60px;
+                    gap: 30px;
+                    .aboutArticlePlayBTN{
+                        button{
+                            @include commonButton;
+                            @include fontCommon(24px, $ffAnton, $reguler, #fff);
+                        }
+                    }
+                    .aboutArticleWatchBTN{
+                        gap: 15px;
+                        button{
+                            background: linear-gradient(#ff39dc, #a60084);
+                            box-shadow: 0px 2px #661355;
+                            text-shadow: 3px 3px #a60084;
+                            border: none;
+                            font-size: 16px;
+                            height: 50px;
+                            width: 50px;
+                            color: #fff;
+                        }
+                        h4{
+                            @include fontCommon (16px, $ffNunito, $reguler, #a60084)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+// about Part
+#aboutPart{
+    background-color: $secondaryBg;
+    padding: 60px 0px;
+    color: white;
+    .container{
+        .row{
+            .commonAboutCol{
+                h3{
+                    @include fontCommon (32px, $ffAnton, $reguler, #fff);
+                    margin-bottom: 30px;
+                }
+            }
+            .aboutCol_about{
+                .footerAboutPara{
+                    @include fontCommon (16px, $ffNunito, $xlight, #fff);
+                    line-height: 26px;
+                    padding-right: 50px;
+                    margin-bottom: 40px;
+                    @include sm {
+                        padding-right: 0;
+                        margin-bottom: 20px;
+                    }
+                    @include md {
+                        padding-right: 0;
+                        margin-bottom: 20px;
+                    }
+                    @include lg {
+                        padding-right: 0;
+                        margin-bottom: 20px;
+                    }
+                }
+                .socialLinks{
+                    gap: 15px;
+                    @include sm{
+                        justify-content: center;
+                        gap: 20px;
+                    }
+                    @include md{
+                        justify-content: center;
+                        gap: 20px;
+                    }
+                    @include lg{
+                        justify-content: center;
+                        gap: 20px;
+                    }
+                    .socialLink{
+                        @include commonButton;
+                        text-shadow: 3px 3px #5813b8;
+                        border-radius: 0;
+                        width: 50px;
+                        padding: 15px 0px;
+                        text-align: center;
+                        &:hover{
+                            text-shadow: 3px 3px #a60084;
+                        }
+                        i{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .importantLinksCol_about{
+                @include sm{
+                    margin-top: 40px;
+                }
+                @include md{
+                    margin-top: 40px;
+                }
+                @include lg{
+                    margin-top: 40px;
+                }
+                .childRowForLinks{
+                    .childColForLinks{
+                        p{
+                            line-height: 40px;
+                            @include sm {
+                                line-height: 30px;
+                            }
+                            @include md {
+                                line-height: 30px;
+                            }
+                            @include lg {
+                                line-height: 30px;
+                            }
+                            a{
+                                display: block;
+                                @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                                transition: 0.3s;
+                                &:hover{
+                                    color: $pink1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .securityInfoCol_about{
+                @include sm{
+                    margin-top: 35px;
+                }
+                @include md{
+                    margin-top: 35px;
+                }
+                @include lg{
+                    margin-top: 35px;
+                }
+                .securityItemsMaster{
+                    gap: 30px;
+                    @include sm{
+                        gap: 10px;
+                    }
+                    @include md{
+                        gap: 20px;
+                    }
+                    @include lg{
+                        gap: 20px;
+                    }
+                    .securityItemMain{
+                        gap: 30px;
+                        align-items: center;
+                        img{
+                            width: 70px;
+                            @include sm{
+                                width: 50px;
+                            }
+                        }
+                        a{
+                            padding-right: 185px;
+                            @include fontCommon (16px, $ffNunito, $reguler, #fff);
+                            line-height: 20px;
+                            transition: 0.3s;
+                            &:hover{
+                                color: $pink1;
+                            }
+                            @include sm{
+                                padding-right: 0;
+                            }
+                            @include md{
+                                padding-right: 0;
+                            }
+                            @include lg{
+                                padding-right: 0;
+                            }
+                            @include xl{
+                                padding-right: 0;
+                            }
+                            @include xxl{
+                                padding-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
