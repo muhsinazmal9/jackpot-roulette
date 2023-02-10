@@ -1,8 +1,17 @@
 // FAQ part
 #faqPart{
     background: $primaryBg;
+    padding: 100px 0px;
+    @include sm {
+        padding: 50px 0px;
+    }
+    @include md {
+        padding: 50px 0px;
+    }
+    @include lg {
+        padding: 50px 0px;
+    }
     .container{
-        padding: 100px 0px;
         .FAQcommonCol{
             @include sm {
                 text-align: center;
@@ -56,6 +65,17 @@
             }
         }
         .tournamentCol{
+            .frequentlySubHead{
+                @include sm {
+                    margin-top: 30px;
+                }
+                @include md {
+                    margin-top: 30px;
+                }
+                @include lg {
+                    margin-top: 30px;
+                }
+            }
             .winCountdown{
                 margin: 30px 0px;
                 .cdSubHead{
@@ -93,7 +113,6 @@
             .winners{
                 height: 312px;
                 overflow-y: auto;
-                color: white;
                 .winner_list{
                     margin: 20px 0px;
                     @include fontCommon (16px, $ffNunito, $reguler, #fff);
