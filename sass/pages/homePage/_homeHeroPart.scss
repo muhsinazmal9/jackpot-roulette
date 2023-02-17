@@ -46,6 +46,15 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                @include sm {
+                    margin-top: 10px;
+                }
+                @include md {
+                    margin-top: 10px;
+                }
+                @include lg {
+                    margin-top: 10px;
+                }
                 .wheelResultMainCount{
                     .wheelResultPara1{
                         @include fontCommon (20px, $ffNunito, $reguler, #fff);
@@ -56,7 +65,17 @@
                         @include gradientText;
                         margin: -100px 0px;
                         letter-spacing: 2px;
-                        @include sm {
+                        @media (min-width: 0) and (max-width: 325px) {
+                            @include fontCommon (150px, $ffAnton, $reguler, transparent);
+                            margin: -50px 0px;
+                            letter-spacing: 2px;
+                        }
+                        @media (min-width: 325.98px) and (max-width: 400px) {
+                            @include fontCommon (200px, $ffAnton, $reguler, transparent);
+                            margin: -50px 0px;
+                            letter-spacing: 2px;
+                        }
+                        @media (min-width: 400.98px) and (max-width: 575.98px) {
                             @include fontCommon (250px, $ffAnton, $reguler, transparent);
                             margin: -75px 0px;
                             letter-spacing: 2px;
